@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802767E728B46FFE002A4D8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802767E628B46FFE002A4D8B /* HomeViewController.swift */; };
 		8067B65728ADC9AA0076EBB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B65628ADC9AA0076EBB9 /* AppDelegate.swift */; };
 		8067B65928ADC9AA0076EBB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B65828ADC9AA0076EBB9 /* SceneDelegate.swift */; };
 		8067B65B28ADC9AA0076EBB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B65A28ADC9AA0076EBB9 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		802767E628B46FFE002A4D8B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8067B65328ADC9AA0076EBB9 /* ProyectoDos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoDos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8067B65628ADC9AA0076EBB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8067B65828ADC9AA0076EBB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8067B65F28ADC9AB0076EBB9 /* Assets.xcassets */,
 				8067B66128ADC9AB0076EBB9 /* LaunchScreen.storyboard */,
 				8067B66428ADC9AB0076EBB9 /* Info.plist */,
+				802767E628B46FFE002A4D8B /* HomeViewController.swift */,
 			);
 			path = ProyectoDos;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8067B65B28ADC9AA0076EBB9 /* ViewController.swift in Sources */,
 				8067B65728ADC9AA0076EBB9 /* AppDelegate.swift in Sources */,
 				8067B65928ADC9AA0076EBB9 /* SceneDelegate.swift in Sources */,
+				802767E728B46FFE002A4D8B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
