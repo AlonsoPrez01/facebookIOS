@@ -17,6 +17,7 @@
 		8067B66E28ADC9AC0076EBB9 /* ProyectoDosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B66D28ADC9AC0076EBB9 /* ProyectoDosTests.swift */; };
 		8067B67828ADC9AC0076EBB9 /* ProyectoDosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B67728ADC9AC0076EBB9 /* ProyectoDosUITests.swift */; };
 		8067B67A28ADC9AC0076EBB9 /* ProyectoDosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8067B67928ADC9AC0076EBB9 /* ProyectoDosUITestsLaunchTests.swift */; };
+		808A1E2D28B6FD8A0054B6E9 /* LoginNetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808A1E2C28B6FD8A0054B6E9 /* LoginNetflixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8067B67328ADC9AC0076EBB9 /* ProyectoDosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoDosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8067B67728ADC9AC0076EBB9 /* ProyectoDosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoDosUITests.swift; sourceTree = "<group>"; };
 		8067B67928ADC9AC0076EBB9 /* ProyectoDosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoDosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		808A1E2C28B6FD8A0054B6E9 /* LoginNetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetflixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				8067B66128ADC9AB0076EBB9 /* LaunchScreen.storyboard */,
 				8067B66428ADC9AB0076EBB9 /* Info.plist */,
 				802767E628B46FFE002A4D8B /* HomeViewController.swift */,
+				808A1E2C28B6FD8A0054B6E9 /* LoginNetflixViewController.swift */,
 			);
 			path = ProyectoDos;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8067B65728ADC9AA0076EBB9 /* AppDelegate.swift in Sources */,
 				8067B65928ADC9AA0076EBB9 /* SceneDelegate.swift in Sources */,
 				802767E728B46FFE002A4D8B /* HomeViewController.swift in Sources */,
+				808A1E2D28B6FD8A0054B6E9 /* LoginNetflixViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
