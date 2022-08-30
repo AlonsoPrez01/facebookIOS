@@ -178,6 +178,42 @@
             </objects>
             <point key="canvasLocation" x="1406" y="-255"/>
         </scene>
+        <!--Pokemon List View Controller-->
+        <scene sceneID="KbI-0U-VLx">
+            <objects>
+                <viewController id="vAn-MJ-Gwy" customClass="PokemonListViewController" customModule="ProyectoDos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bgZ-if-fjU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JQ8-oz-zxM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="e3A-5s-xeT">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JJC-6C-Hzl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JQ8-oz-zxM" firstAttribute="leading" secondItem="JJC-6C-Hzl" secondAttribute="leading" id="IMw-Rt-S0Q"/>
+                            <constraint firstItem="JQ8-oz-zxM" firstAttribute="top" secondItem="JJC-6C-Hzl" secondAttribute="top" id="PQ7-Hp-Em5"/>
+                            <constraint firstItem="JQ8-oz-zxM" firstAttribute="trailing" secondItem="JJC-6C-Hzl" secondAttribute="trailing" id="TnX-HR-V7H"/>
+                            <constraint firstItem="JQ8-oz-zxM" firstAttribute="bottom" secondItem="JJC-6C-Hzl" secondAttribute="bottom" id="Zh1-fb-9oD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ygg-vW-nZl"/>
+                    <connections>
+                        <outlet property="loadingIndicatorView" destination="e3A-5s-xeT" id="j4R-LS-hha"/>
+                        <outlet property="pokemonTableView" destination="JQ8-oz-zxM" id="UPa-sH-Ooh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zp4-aV-4Iq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362.3188405797102" y="1076.1160714285713"/>
+        </scene>
         <!--Home-->
         <scene sceneID="Jog-Am-Obg">
             <objects>
@@ -205,6 +241,7 @@
                         <outlet property="practicas_tableView" destination="w4x-l9-2jM" id="Dmf-lX-dZU"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="facebookSegue" id="85V-0B-SdJ"/>
                         <segue destination="k1c-ps-hG9" kind="show" identifier="LoginNetflixViewController" id="yfN-81-Hbc"/>
+                        <segue destination="vAn-MJ-Gwy" kind="show" identifier="listPokemonSegue" id="8oz-v6-IXI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No3-9o-OuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
