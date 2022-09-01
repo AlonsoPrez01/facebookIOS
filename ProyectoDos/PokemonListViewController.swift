@@ -19,12 +19,23 @@ struct Pokemon: Decodable {
     var url: String
 }
 
+class GoToPokemon{
+    var title: String
+    var segueId: String
+    
+    init(title: String, segueId: String){
+        self.title = title
+        self.segueId = segueId
+    }
+}
+
 class PokemonListViewController: UIViewController {
 
     @IBOutlet weak var loadingIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var pokemonTableView: UITableView!
     
     var pokemons: [Pokemon] = []
+    var currentPokemon: Pokemon? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +43,10 @@ class PokemonListViewController: UIViewController {
         pokemonTableView.dataSource = self
         loadingIndicatorView.hidesWhenStopped = true
         loadingIndicatorView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
             self.loadPokemons()
         }
+        pokemonTableView.delegate = self
 
     }
     
@@ -55,6 +67,13 @@ class PokemonListViewController: UIViewController {
         }
         task.resume()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "especificPokemonSegue" {
+            let detailedPokemonViewController = segue.destination as? DetailedPokemonViewController
+            detailedPokemonViewController?.pokemons = currentPokemon
+        }
+    }
 
 }
 
@@ -71,6 +90,11 @@ extension PokemonListViewController: UITableViewDataSource, UITableViewDelegate 
         let item = pokemons[indexPath.row]
         cell?.textLabel?.text = item.name
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentPokemon = pokemons[indexPath.row]
+        performSegue(withIdentifier: "especificPokemonSegue", sender: nil)
     }
 
 }
