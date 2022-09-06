@@ -40,6 +40,7 @@ class PokemonListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pokemonTableView.register(UINib(nibName: "PokemonTableViewCell", bundle: nil), forCellReuseIdentifier: "pokemonCell")
         pokemonTableView.dataSource = self
         loadingIndicatorView.hidesWhenStopped = true
         loadingIndicatorView.startAnimating()
@@ -83,12 +84,13 @@ extension PokemonListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = pokemonTableView.dequeueReusableCell(withIdentifier: "cell")
+        var cell = pokemonTableView.dequeueReusableCell(withIdentifier: "pokemonCell") as? PokemonTableViewCell
         if(cell == nil){
-            cell = UITableViewCell()
+            cell = PokemonTableViewCell()
         }
         let item = pokemons[indexPath.row]
-        cell?.textLabel?.text = item.name
+        //cell?.textLabel?.text = item.name
+        cell?.setupView(pokemon: item)
         return cell!
     }
     
