@@ -23,7 +23,8 @@ class HomeViewController: UIViewController {
     let data: [Practicas] = [
         Practicas(title: "Login Facebook", segueId: "facebookSegue"),
         Practicas(title: "Login Netflix", segueId: "LoginNetflixViewController"),
-        Practicas(title: "Lista de Pokemon", segueId: "listPokemonSegue")
+        Practicas(title: "Lista de Pokemon", segueId: "listPokemonSegue"),
+        Practicas(title: "Login Pre-Exámen", segueId: "loginPreExamen")
     ]
     override func viewDidLoad() {
         super.viewDidLoad()

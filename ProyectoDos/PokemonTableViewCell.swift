@@ -24,7 +24,8 @@ class PokemonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setupView(pokemon: Pokemon){
-        loadingView.hidesWhenStopped = true
+        self.loadingView.hidesWhenStopped = true
+        self.loadingView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
             self.loadPokemon(pokemon: pokemon)
         }

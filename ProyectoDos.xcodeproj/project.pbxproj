@@ -23,6 +23,9 @@
 		8068C49C28BDA61B0062157E /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8068C49B28BDA61B0062157E /* PokemonListViewController.swift */; };
 		807EBDFF28C0438000B9EBD0 /* DetailedPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EBDFE28C0438000B9EBD0 /* DetailedPokemonViewController.swift */; };
 		808A1E2D28B6FD8A0054B6E9 /* LoginNetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808A1E2C28B6FD8A0054B6E9 /* LoginNetflixViewController.swift */; };
+		80C9532828C974AA00BEC554 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9532628C974AA00BEC554 /* ImageCollectionViewCell.swift */; };
+		80C9532928C974AA00BEC554 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C9532728C974AA00BEC554 /* ImageCollectionViewCell.xib */; };
+		80D6A5EF28D01D37005E52C9 /* LoginPreExamenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6A5EE28D01D37005E52C9 /* LoginPreExamenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		8068C49D28BDA8C80062157E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		807EBDFE28C0438000B9EBD0 /* DetailedPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPokemonViewController.swift; sourceTree = "<group>"; };
 		808A1E2C28B6FD8A0054B6E9 /* LoginNetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetflixViewController.swift; sourceTree = "<group>"; };
+		80C9532628C974AA00BEC554 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		80C9532728C974AA00BEC554 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		80D6A5EE28D01D37005E52C9 /* LoginPreExamenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPreExamenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		8067B64A28ADC9AA0076EBB9 = {
 			isa = PBXGroup;
 			children = (
+				80D6A5EE28D01D37005E52C9 /* LoginPreExamenViewController.swift */,
 				8067B65528ADC9AA0076EBB9 /* ProyectoDos */,
 				8067B66C28ADC9AC0076EBB9 /* ProyectoDosTests */,
 				8067B67628ADC9AC0076EBB9 /* ProyectoDosUITests */,
@@ -136,6 +143,8 @@
 				8068C49B28BDA61B0062157E /* PokemonListViewController.swift */,
 				803724CB28C6E1A900CDE2BF /* PokemonTableViewCell.swift */,
 				803724CC28C6E1A900CDE2BF /* PokemonTableViewCell.xib */,
+				80C9532628C974AA00BEC554 /* ImageCollectionViewCell.swift */,
+				80C9532728C974AA00BEC554 /* ImageCollectionViewCell.xib */,
 				8068C49D28BDA8C80062157E /* MyPlayground.playground */,
 			);
 			path = ProyectoDos;
@@ -266,6 +275,7 @@
 				803724CE28C6E1A900CDE2BF /* PokemonTableViewCell.xib in Resources */,
 				8067B66028ADC9AB0076EBB9 /* Assets.xcassets in Resources */,
 				8067B65E28ADC9AA0076EBB9 /* Main.storyboard in Resources */,
+				80C9532928C974AA00BEC554 /* ImageCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +306,10 @@
 				8067B65728ADC9AA0076EBB9 /* AppDelegate.swift in Sources */,
 				8067B65928ADC9AA0076EBB9 /* SceneDelegate.swift in Sources */,
 				802767E728B46FFE002A4D8B /* HomeViewController.swift in Sources */,
+				80C9532828C974AA00BEC554 /* ImageCollectionViewCell.swift in Sources */,
 				803724C828C6DECA00CDE2BF /* Pokemon.swift in Sources */,
 				8068C49C28BDA61B0062157E /* PokemonListViewController.swift in Sources */,
+				80D6A5EF28D01D37005E52C9 /* LoginPreExamenViewController.swift in Sources */,
 				808A1E2D28B6FD8A0054B6E9 /* LoginNetflixViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
